@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+  <head>
+  </head>
+
+  <body>
+    <h1 class="Titulo">Nosotros</h1>
+    <p>
+      una tienda especializada en artículos para todo tipo de animales domésticos. Ofrecemos una amplia variedad de
+      productos, desde alimentos y golosinas hasta juguetes y accesorios de entrenamiento.
+
+      En nuestra tienda, encontrará marcas reconocidas y de alta calidad para satisfacer las necesidades de sus
+      mascotas. Además, nuestro personal está altamente capacitado y siempre está disponible para brindarle
+      asesoramiento y recomendaciones en cuanto a los productos adecuados para sus animales.
+
+      Visítanos hoy mismo y haz felices a tus mascotas con nuestros productos de primera calidad.
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <img src="{% static 'core/images/el fulanito.jpg' %}"width="300" height="300">
+              <h5 class="card-title">Sebastian Catalan</h5>
+              <p class="card-text">Atencion al cliente</p>
+              <p class="card-text">seba.catalan@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="{% static 'core/images/yo.png' %}" width="300" height="300">
+              <h5 class="card-title">Felipe Ruiz</h5>
+              <p class="card-text">Gerente General</p>
+              <p class="card-text">fe.ruiz@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endblock content %}
